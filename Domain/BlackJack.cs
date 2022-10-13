@@ -3,10 +3,10 @@
 public class BlackJack
 {
     public bool FaceDown;
-
     public bool FaceUp;
-
     private Deck _deck;
+    public Hand PlayerHand { get; }
+    public Hand DealerHand { get; }
 
     public GameState GameState { get; private set; }
 
